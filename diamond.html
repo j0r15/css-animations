@@ -1,0 +1,131 @@
+<title>Diamond</title>
+<div class="box cntr">
+  <div class="animate lint cntr bounce-in">
+  </div>
+    <div class="animate diamondouter cntr rotate"></div>
+    <div class="animate diamond cntr rotatecc">
+      <a href="grid.html"><div class="animate circle"></div></a>
+  	</div>
+</div>
+
+<style>
+  :root {
+    --background: #333333;
+    --foreground: #393E46;
+    --accent:     #4CAAB3;
+  }
+  .cntr{
+    display: flex;
+ 	align-items: center;
+    justify-content: center;
+  }
+  .animate {
+    transition: .4s all ease;
+  }
+  .lint {
+    position:absolute;
+    height: 150px;
+    width: 1000px;
+    background: var(--accent);
+  }
+  .lint:hover {
+    position:absolute;
+    scale: 1.5;
+  }
+
+
+  .diamond {
+    width: 150px;
+    height: 150px;
+    rotate: 45deg;
+    background: var(--accent);
+  }
+
+  .diamond:hover {
+    scale: 1.5;
+  }
+
+   .diamondouter {
+    width: 250px;
+    height: 250px;
+    rotate: 45deg;
+    position: absolute;
+    background: var(--background);
+
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--foreground);
+
+  }
+  .circle:hover {
+    width: 50px;
+    height: 50px;
+    border-radius: 0px;
+  }
+
+  .box {
+    height: 100%;
+  }
+
+  html{
+    background: var(--background);
+  }
+
+
+  .bounce-in{
+    -webkit-animation:bounce-in 1s ease 0s 1 normal;
+    -moz-animation:bounce-in 1s ease 0s 1 normal;
+    -ms-animation:bounce-in 1s ease 0s 1 normal;
+    animation:bounce-in 1s ease 0s 1 normal;
+  }
+
+  @-webkit-keyframes bounce-in {
+    0%{ opacity: 0; -webkit-transform: scale(.3); transform: scale(.3); }
+    50%{ opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+    70%{ -webkit-transform: scale(0.9); transform: scale(0.9); }
+    100%{ -webkit-transform: scale(1); transform: scale(1); }
+  }
+
+  @keyframes bounce-in {
+    0%{ opacity: 0; transform: scale(.3); }
+    50%{ opacity: 1; transform: scale(1.0); }
+    70%{ transform: scale(0.9); }
+    100%{ transform: scale(1); }
+  }
+
+
+  .rotate{
+    -webkit-animation:rotate 1s ease-in-out 0s 1 normal;
+    -moz-animation:rotate 1s ease-in-out 0s 1 normal;
+    -ms-animation:rotate 1s ease-in-out 0s 1 normal;
+    animation:rotate 1s ease-in-out 0s 1 normal;
+  }
+
+  @-webkit-keyframes rotate {
+    100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+  }
+  @keyframes rotate {
+    100%{ transform: rotate(360deg); }
+  }
+
+
+  .rotatecc{
+    -webkit-animation:rotate 1s ease-in-out 0s 1 normal;
+    -moz-animation:rotate 1s ease-in-out 0s 1 normal;
+    -ms-animation:rotate 1s ease-in-out 0s 1 normal;
+    animation:rotatecc 1s ease-in-out 0s 1 normal;
+  }
+
+  @-webkit-keyframes rotatecc {
+    100%{ -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
+  }
+  @keyframes rotatecc {
+    100%{ transform: rotate(-360deg); }
+  }
+
+
+</style>

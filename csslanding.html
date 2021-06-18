@@ -1,0 +1,96 @@
+<title>~Mustacho~</title>
+  <div class="main">
+    <div class="ani-rotate">
+      <div class="m newspaper"></div>
+      <div class="u newspaper"></div>
+      <a href="diamond.html">
+        <div class="s newspaper"></div>
+      </a>
+      <div class="t newspaper"></div>
+      </div>
+  </div>
+<style>
+  .newspaper:hover{
+    height: 25px;
+    width: 50px;
+    transition: .4s all ease;
+  }
+
+  .newspaper {
+    height: 25px;
+    width: 10px;
+	  background:#F5D6B4;
+    border: 20px #D86F45 solid;
+    flex-direction: row;
+    position:relative;
+    margin:0;
+    padding: 0;
+    transition: all 1s ease;
+    }
+
+  .m {
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top: 0 !important;
+    position:relative;
+    left:20px;
+    top: 15px;
+  }
+  .u {
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom: 0 !important;
+    position:relative;
+    top:-25px;
+  }
+  .s {
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top: 0 !important;
+    position:relative;
+    left:-20px;
+    bottom: -15px;
+  }
+  .t {
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom: 0 !important;
+    position:relative;
+    top:-25px;
+    left: -40px;
+  }
+
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+  }
+  .ani-rotate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  body{
+    background: #F5D6B4;
+  }
+
+
+.newspaper{
+  -webkit-animation:newspaper 4s ease 0s 1 normal;
+  -moz-animation:newspaper 4s ease 0s 1 normal;
+  -ms-animation:newspaper 4s ease 0s 1 normal;
+  animation:newspaper 4s ease 0s 1 normal;
+}
+
+@keyframes newspaper {
+  0%{ opacity: 0; transform: scale3d(0.3, 0.3, 0.3) rotate(720deg); }
+  30%{ opacity: 1; transform: scale3d(1,1,1) rotate(15deg); }
+  100%{ opacity: 1; transform: scale3d(1,1,1) rotate(0deg); }
+}
+
+</style>
