@@ -1,11 +1,71 @@
 <title>Drips</title>
-<div class="cntr">
-  <div class="animate box bounce-in"></div>
-  <div class="animate box bounce-in"></div>
-  <div class="animate box bounce-in"></div>
-  <a href="eyes.html"><div class="animate box bounce-in"></div></a>
-  <div class="animate box bounce-in"></div>
-  <div class="animate box bounce-in"></div>
+<div class="container">
+  <div class="cntr">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
 </div>
 
 <style>
@@ -13,85 +73,45 @@
     --accent: #eaccea;
     --background: #cceae0;
   }
-
-  .animate {
-    transition: .4s all ease;
+  .container{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .cntr{
+    margin: 0;
     display: flex;
+    flex-wrap: wrap;
  	  align-items: center;
-    justify-content: space-around;
-    height:100%;
+    justify-content: center;
   }
 
   .box {
+    margin: 5px;
     width: 50px;
     height: 50px;
     border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
-    rotate: 45deg;
     background: var(--accent);
-
+    transition: .5s 5s all ease;
   }
 
-  .box:hover {
+  .box:hover{
     scale: 1.5;
+    rotate: 90deg;
     border-radius: 0px !important;
+    transition: .5s all ease;
   }
 
-  html{
+  html {
     background: var(--background);
   }
-
-  .bounce-in {
-    -webkit-animation:bounce-in 1s ease 0s 1 normal;
-    -moz-animation:bounce-in 1s ease 0s 1 normal;
-    -ms-animation:bounce-in 1s ease 0s 1 normal;
-    animation:bounce-in 1s ease 0s 1 normal;
+  body {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
-  @-webkit-keyframes bounce-in {
-    0%{ opacity: 0; -webkit-transform: scale(.3); transform: scale(.3); }
-    50%{ opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
-    70%{ -webkit-transform: scale(0.9); transform: scale(0.9); }
-    100%{ -webkit-transform: scale(1); transform: scale(1); }
-  }
-
-  @keyframes bounce-in {
-    0%{ opacity: 0; transform: scale(.3); }
-    50%{ opacity: 1; transform: scale(1.0); }
-    70%{ transform: scale(0.9); }
-    100%{ transform: scale(1); }
-  }
-
-
-  .rotate{
-    -webkit-animation:rotate 1s ease-in-out 0s 1 normal;
-    -moz-animation:rotate 1s ease-in-out 0s 1 normal;
-    -ms-animation:rotate 1s ease-in-out 0s 1 normal;
-    animation:rotate 1s ease-in-out 0s 1 normal;
-  }
-  @-webkit-keyframes rotate {
-    100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
-  }
-  @keyframes rotate {
-    100%{ transform: rotate(360deg); }
-  }
-
-
-  .rotatecc{
-    -webkit-animation:rotate 1s ease-in-out 0s 1 normal;
-    -moz-animation:rotate 1s ease-in-out 0s 1 normal;
-    -ms-animation:rotate 1s ease-in-out 0s 1 normal;
-    animation:rotatecc 1s ease-in-out 0s 1 normal;
-  }
-  @-webkit-keyframes rotatecc {
-    100%{ -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
-  }
-  @keyframes rotatecc {
-    100%{ transform: rotate(-360deg); }
-  }
-
-
 </style>
+
